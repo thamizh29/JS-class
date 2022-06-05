@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>You Want Show AlertBox</p>
+   <!-- <input type="button" ondblclick="showfun()" value="Double Click1"><br>
+    <input type="button" ondblclick="myfun()" value="Double Click2">
+    <h1 id="fn"></h1>-->
+    <br>
+    <p id="my" ondblclick="newfun()">Double Click</p>
+  
+    
+</body>
+<script>
+   /* function myfun(){
+   alert("Welcome");
+    }
+   function showfun(){
+        Prompt for Display the value
+       var a= prompt("Double Click Me");
+      alert(a);
+    }*/
+    function newfun(){
+       var b= document.getElementById('my').innerHTML;
+        var a= prompt(b);
+        document.getElementById('my').innerHTML = a;
+    }
+</script>
+</html>
